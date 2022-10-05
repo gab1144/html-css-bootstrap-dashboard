@@ -7,6 +7,7 @@
   --dark-blue-custom: rgb(18, 41, 62);
   --orange-bell: rgb(255, 143, 0);
   --red-icon-code: rgb(242, 101, 81);
+  --border-radius-card: 5px;
 }
 
 main {
@@ -40,10 +41,15 @@ header li{
 header .fa-bell {
   color: orange;
 }
+
+.navbar-brand img[alt="Logo mobile"] {
+  height: 50px;
+}
 /*----/header----*/
 
 /*----sidebar menu----*/
 .aside {
+  background-image: url(../img/sidebar-bg.png);
   background-color: var(--dark-blue-custom);
   color: white;
   padding-top: 10px;
@@ -83,9 +89,16 @@ header .fa-bell {
 /*----/colonna sinistra main----*/
 
 /*----card----*/
+.card {
+  border-radius: var(--border-radius-card);
+}
+
 .card .card-title {
   padding-left: 15px;
   padding-bottom: 20px;
+  padding-top: 5px;
+  border-top-left-radius: var(--border-radius-card);
+  border-top-right-radius: var(--border-radius-card);
 }
 /*----/card----*/
 
