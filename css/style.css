@@ -8,6 +8,7 @@
   --orange-bell: rgb(255, 143, 0);
   --red-icon-code: rgb(242, 101, 81);
   --border-radius-card: 5px;
+  --blue-badge: rgb(21, 92, 186);
 }
 
 main {
@@ -79,6 +80,18 @@ header .fa-bell {
 .top-row {
   background-color: var(--blue-custom);
   padding: 25px 0;
+}
+
+.top-row h2{
+  width: fit-content;
+}
+
+.top-row .badge{
+  background-color: var(--blue-badge);
+}
+
+.top-row .numero {
+  font-size: 30px;
 }
 /*----/riga top main----*/
 
