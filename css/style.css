@@ -9,11 +9,6 @@
   --red-icon-code: rgb(242, 101, 81);
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
 main {
   height: calc(100vh - var(--header-height));
   overflow: auto;
@@ -24,6 +19,20 @@ header {
   height: var(--header-height);
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*******************************************************
+      UTILITIES
+*******************************************************/
+.padding-none {
+  padding: 0;
+}
+/*******************************************************/
+
+/*----header----*/
 header li{
   margin-right: 30px;
 }
@@ -31,11 +40,9 @@ header li{
 header .fa-bell {
   color: orange;
 }
+/*----/header----*/
 
-.padding-none {
-  padding: 0;
-}
-
+/*----sidebar menu----*/
 .aside {
   background-color: var(--dark-blue-custom);
   color: white;
@@ -60,27 +67,36 @@ header .fa-bell {
   display: flex;
   margin-bottom: 20px;
 }
+/*----/sidebar menu----*/
+
+/*----riga top main----*/
 .top-row {
   background-color: var(--blue-custom);
   padding: 25px 0;
 }
+/*----/riga top main----*/
 
+/*----colonna sinistra main----*/
 .left-col {
   padding-left: 25px;
 }
+/*----/colonna sinistra main----*/
 
+/*----card----*/
 .card .card-title {
   padding-left: 15px;
   padding-bottom: 20px;
 }
+/*----/card----*/
 
+/*----tabella----*/
 [scope="row"]::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  /*Icon*/
+  /*icon*/
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
@@ -110,6 +126,11 @@ tr th:not(:first-child), tr td{
 tr th:first-child, tbody tr tr{
   width: 50%;
 }
+/*----/tabella----*/
+
+/*******************************************************
+      RESPONSIVE
+*******************************************************/
 
 @media screen and (min-width: 992px){
   .aside i {
