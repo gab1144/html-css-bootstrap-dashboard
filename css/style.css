@@ -133,12 +133,8 @@ header .fa-bell {
   border-color: grey;
 }
 
-tr th:not(:first-child), tr td{
+thead tr th:not(:first-child), tbody tr td{
   text-align: center;
-}
-
-tr th:first-child, tbody tr tr{
-  width: 50%;
 }
 
 .offcanvas {
@@ -149,6 +145,14 @@ tr th:first-child, tbody tr tr{
 /*******************************************************
       RESPONSIVE
 *******************************************************/
+
+@media screen and (max-width: 767px){
+  thead tr th:nth-child(2), tbody tr td:nth-child(2),
+  thead tr th:nth-child(3), tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
+
 
 @media screen and (min-width: 992px){
   .aside i {
