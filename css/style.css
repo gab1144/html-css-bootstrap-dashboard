@@ -5,12 +5,11 @@
   --navbar-drop-menu-width: 170px;
   --blue-custom: rgb(26, 115, 232);
   --dark-blue-custom: rgb(18, 41, 62);
+  --orange-bell: rgb(255, 143, 0);
 }
 
 ul {
-  width: fit-content;
   list-style: none;
-  margin: 0 auto;
   padding-left: 0;
 }
 
@@ -24,6 +23,14 @@ header {
   height: var(--header-height);
 }
 
+header li{
+  margin-right: 30px;
+}
+
+header .fa-bell {
+  color: orange;
+}
+
 .padding-none {
   padding: 0;
 }
@@ -31,9 +38,27 @@ header {
 .aside {
   background-color: var(--dark-blue-custom);
   color: white;
+  padding-top: 10px;
 }
 
+.aside ul {
+  width: fit-content;
+  padding-left: 0;
+  height: calc(100% - 45px);
+}
 
+.aside ul, .aside .admin {
+  margin: 0 auto;
+}
+
+.aside .admin {
+  width: fit-content;
+}
+
+.aside li{
+  display: flex;
+  margin-bottom: 20px;
+}
 .top-row {
   background-color: var(--blue-custom);
   padding: 25px 0;
@@ -46,4 +71,10 @@ header {
 .card .card-title {
   padding-left: 15px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 992px){
+  .aside i {
+    margin-right: 10px;
+  }
 }
