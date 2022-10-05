@@ -6,6 +6,7 @@
   --blue-custom: rgb(26, 115, 232);
   --dark-blue-custom: rgb(18, 41, 62);
   --orange-bell: rgb(255, 143, 0);
+  --red-icon-code: rgb(242, 101, 81);
 }
 
 ul {
@@ -71,6 +72,43 @@ header .fa-bell {
 .card .card-title {
   padding-left: 15px;
   padding-bottom: 20px;
+}
+
+[scope="row"]::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /*Icon*/
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  content: "\f121";
+  color: white;
+  background-color: var(--red-icon-code);
+  padding: 5px 7px;
+  border-radius: 50%;
+}
+
+[scope="row"] {
+  font-weight: 400;
+}
+
+.table-buttons i {
+  color: grey;
+}
+
+.table-buttons .btn {
+  border-color: grey;
+}
+
+tr th:not(:first-child), tr td{
+  text-align: center;
+}
+
+tr th:first-child, tbody tr tr{
+  width: 50%;
 }
 
 @media screen and (min-width: 992px){
