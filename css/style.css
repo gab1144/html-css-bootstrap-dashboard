@@ -13,8 +13,3 @@ main {
 header {
   height: var(--header-height);
 }
-
-.sidebar.container {
-  height: calc(100vh - var(--header-height));
-  width: var(--side-bar-width);
-}
