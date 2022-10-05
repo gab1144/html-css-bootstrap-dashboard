@@ -95,6 +95,7 @@ header .fa-bell {
 
 .card .card-title {
   padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 20px;
   padding-top: 5px;
   border-top-left-radius: var(--border-radius-card);
@@ -138,6 +139,10 @@ tr th:not(:first-child), tr td{
 
 tr th:first-child, tbody tr tr{
   width: 50%;
+}
+
+.offcanvas {
+  width: 70%;
 }
 /*----/tabella----*/
 
