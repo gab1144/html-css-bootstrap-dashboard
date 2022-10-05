@@ -3,13 +3,47 @@
   --side-bar-width: 10%;
   --navbar-brand-width: 180px;
   --navbar-drop-menu-width: 170px;
+  --blue-custom: rgb(26, 115, 232);
+  --dark-blue-custom: rgb(18, 41, 62);
+}
+
+ul {
+  width: fit-content;
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 main {
   height: calc(100vh - var(--header-height));
   overflow: auto;
+  padding: 0;
 }
 
 header {
   height: var(--header-height);
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.aside {
+  background-color: var(--dark-blue-custom);
+  color: white;
+}
+
+
+.top-row {
+  background-color: var(--blue-custom);
+  padding: 25px 0;
+}
+
+.left-col {
+  padding-left: 25px;
+}
+
+.card .card-title {
+  padding-left: 15px;
+  padding-bottom: 20px;
 }
