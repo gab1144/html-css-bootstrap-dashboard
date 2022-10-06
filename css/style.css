@@ -9,6 +9,7 @@
   --red-icon-code: rgb(242, 101, 81);
   --border-radius-card: 5px;
   --blue-badge: rgb(21, 92, 186);
+  --grey-search-bar: rgb(229, 229, 229);
 }
 
 main {
@@ -32,20 +33,56 @@ ul {
 .padding-none {
   padding: 0;
 }
+
+.padding-right-none {
+  padding-right: 0;
+}
+
+.custom-container {
+  width: 99%;
+}
 /*******************************************************/
 
 /*----header----*/
 header li{
-  margin-right: 30px;
+  margin-right: 15%;
 }
 
 header .fa-bell {
   color: orange;
+  background-color: white;
+}
+
+a.navbar-brand {
+
+  margin: auto 0;
 }
 
 .navbar-brand img[alt="Logo mobile"] {
-  height: 50px;
+  height: 40px;
 }
+
+.navbar-brand img[alt="Logo"] {
+ width: 100%;
+}
+/*--search--*/
+
+header .search-bar i {
+  padding-left: 10px;
+}
+
+header .search-bar{
+  background-color: var(--grey-search-bar);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+header .search-bar .form-control {
+  border: none;
+  background-color: var(--grey-search-bar);
+}
+/*--search--*/
+
 /*----/header----*/
 
 /*----sidebar menu----*/
@@ -68,17 +105,28 @@ header .fa-bell {
 
 .aside .admin {
   width: fit-content;
+  padding: 10px 2px;
+  border-radius: 5px;
 }
 
-.aside li{
+.aside li {
   display: flex;
-  margin-bottom: 20px;
+  padding: 10px 2px;
+  border-radius: 5px;
+}
+
+.aside li:hover, .aside .admin:hover {
+  background-color: rgba(255, 255, 255, 0.164);
 }
 /*----/sidebar menu----*/
 
 /*----riga top main----*/
 .top-row {
   background-color: var(--blue-custom);
+  padding-left: 25px;
+}
+
+.top-row [class^="col"]{
   padding: 25px 0;
 }
 
@@ -95,15 +143,10 @@ header .fa-bell {
 }
 /*----/riga top main----*/
 
-/*----colonna sinistra main----*/
-.left-col {
-  padding-left: 25px;
-}
-/*----/colonna sinistra main----*/
-
 /*----card----*/
 .card {
   border-radius: var(--border-radius-card);
+  margin-bottom: 20px;
 }
 
 .card .card-title {
@@ -138,6 +181,10 @@ header .fa-bell {
   font-weight: 400;
 }
 
+thead tr th:nth-child(5), tbody tr td:nth-child(5) {
+  width: 120px;
+}
+
 .table-buttons i {
   color: grey;
 }
@@ -150,6 +197,10 @@ thead tr th:not(:first-child), tbody tr td{
   text-align: center;
 }
 
+tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.144);
+}
+
 .offcanvas {
   width: 70%;
 }
@@ -159,9 +210,16 @@ thead tr th:not(:first-child), tbody tr td{
       RESPONSIVE
 *******************************************************/
 
-@media screen and (max-width: 767px){
-  thead tr th:nth-child(2), tbody tr td:nth-child(2),
+@media screen and (max-width: 575px){
   thead tr th:nth-child(3), tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 767px){
+  thead tr th:nth-child(2), tbody tr td:nth-child(2){
     display: none;
   }
 }
