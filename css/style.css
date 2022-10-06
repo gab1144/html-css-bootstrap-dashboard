@@ -229,7 +229,7 @@ tbody tr:hover {
 
 @media screen and (min-width: 576px) {
   .offcanvas {
-    width: 70%;
+    width: 50%;
   }
 
   thead tr th:nth-child(3), tbody tr td:nth-child(3) {
@@ -238,14 +238,18 @@ tbody tr:hover {
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   thead tr th:nth-child(2), tbody tr td:nth-child(2){
     display: table-cell;
+  }
+
+  .offcanvas {
+    width: 70%;
   }
 }
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .aside i {
     margin-right: 10px;
   }
