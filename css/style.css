@@ -12,14 +12,18 @@
   --grey-search-bar: rgb(229, 229, 229);
 }
 
-main {
-  height: calc(100vh - var(--header-height));
-  overflow: auto;
-  padding: 0;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
   height: var(--header-height);
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+  overflow: auto;
+  padding: 0;
 }
 
 ul {
@@ -54,7 +58,6 @@ header .fa-bell {
 }
 
 a.navbar-brand {
-
   margin: auto 0;
 }
 
@@ -83,6 +86,12 @@ header .search-bar .form-control {
 }
 /*--search--*/
 
+
+header .navbar .buttons a{
+  text-decoration: none;
+  color: black;
+}
+
 /*----/header----*/
 
 /*----sidebar menu----*/
@@ -91,6 +100,7 @@ header .search-bar .form-control {
   background-color: var(--dark-blue-custom);
   color: white;
   padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .aside ul {
@@ -105,18 +115,19 @@ header .search-bar .form-control {
 
 .aside .admin {
   width: fit-content;
-  padding: 10px 2px;
-  border-radius: 5px;
 }
 
-.aside li {
+.aside a {
   display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
   padding: 10px 2px;
-  border-radius: 5px;
 }
 
 .aside li:hover, .aside .admin:hover {
   background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 5px;
 }
 /*----/sidebar menu----*/
 
@@ -124,10 +135,11 @@ header .search-bar .form-control {
 .top-row {
   background-color: var(--blue-custom);
   padding-left: 25px;
+  padding-top: 25px;
 }
 
 .top-row [class^="col"]{
-  padding: 25px 0;
+  padding-bottom: 25px;
 }
 
 .top-row h2{

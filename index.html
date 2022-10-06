@@ -14,6 +14,11 @@
   <!--Font Awesom-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" href="css/style.css">
   <title>Boolean</title>
 </head>
@@ -39,10 +44,10 @@
           </div>
 
           <div class="col-1 padding-none">
-            <ul class="d-flex h-100 align-items-center">
-              <li><i class="fa-solid fa-list-ul d-none d-xl-block"></i></li>
-              <li><i class="fa-solid fa-circle-question d-none d-xl-block"></i></li>
-              <li><i class="fa-solid fa-ellipsis-vertical d-none d-xl-block"></i></li>
+            <ul class="d-flex h-100 align-items-center buttons">
+              <li><a href="#"><i class="fa-solid fa-list-ul d-none d-xl-block"></i></a></i></li>
+              <li><a href="#"><i class="fa-solid fa-circle-question d-none d-xl-block"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-ellipsis-vertical d-none d-xl-block"></i></a></li>
               <li>
                 <div class="dropstart">
                   <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,13 +76,15 @@
       <!--sidebar menu-->
       <div class="aside col-1 padding-none">
         <ul>
-          <li><i class="fa-solid fa-house"></i><span class="d-none d-lg-block"> Home</span></li>
-          <li><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block"> Stats</span></li>
-          <li><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block"> Signals</span></li>
+          <li> <a href="#"><i class="fa-solid fa-house"></i><span class="d-none d-lg-block"> Home</span></li></a>
+          
+          <li><a href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block"> Stats</span></li></a>
+          
+          <li><a href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block"> Signals</span></li></a>
         </ul>
 
         <div class="admin">
-          <i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline-block">Admin</span>
+          <a href="#"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline-block">Admin</span></a>
         </div>
       </div>
       <!--/sidebar menu-->
@@ -89,13 +96,23 @@
             <!--riga top main-->
             <div class="row top-row text-white row-cols-1 row-cols-lg-2">
               <div class="col-lg-8">
-                <h2>Boolean</h2>
+                <h2 class="d-inline">Boolean</h2>
 
                 <span class="badge rounded-pill">Piano blaze</span>
-                <span class="badge rounded-pill">3 app</span>
-                <span class="badge rounded-pill">Boolean mobile app</span>
-                <span class="badge rounded-pill">Boolean web app</span>
-                <span class="badge rounded-pill">Boolean blog app</span>
+                <div>
+                  <span class="badge rounded-pill">3 app</span>
+
+                  <div class="d-inline d-lg-none">
+                    <i class="bi bi-chevron-double-right"></i>
+                    <span class="badge rounded-pill">+</span>
+                  </div>
+                  
+                  <div class="d-none d-lg-inline ">
+                    <span class="badge rounded-pill">Boolean mobile app</span>
+                    <span class="badge rounded-pill">Boolean web app</span>
+                    <span class="badge rounded-pill">Boolean blog app</span>
+                  </div>
+                </div>
               </div>
 
               <div class="col-lg-4">
